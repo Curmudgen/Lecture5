@@ -4,13 +4,26 @@
         <title>HelloJS</title>
         <script>
             function hello() {
-                document.querySelector('h1').innerHTML = 'Goodbye!';
+                if (document.querySelector('h1').innerHTML === 'Hello') {
+                    document.querySelector('h1').innerHTML = 'Goodbye!';
+                }
+                else {
+                    document.querySelector('h1').innerHTML = 'Hello!';
+                }
+                
             }
+            /*
+            function goodbye() {
+                document.querySelector('h2').innerHTML = 'Hello, again!';
+            }
+            */
             
         </script>
     </head>
     <body>
         <h1>Hello, JS!</h1>
         <button onclick="hello()">Adios!</button>
+        
+        
     </body>
 </html>

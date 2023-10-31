@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html land="en">
+<html lang="en">
     <head>
         <title>Counter</title>
         <script>
-           //let counter = 0;
-           function hello() {
-            for (let index = 1; index < 11; index++) {
-            alert(index);
+           let counter = 0;
+           function count() {
+            counter++;
+            document.querySelector('h1').innerHTML = counter;
+            if(counter % 10 === 0) {
+                alert(`Count is now ${counter}`);
+            }
            }
            
-           }
+           
         </script>
     </head>
     <body>
-        <h1>Hello, JS!</h1>
-        <button onclick="hello()">Count</button>
+        <h1>0</h1>
+        <button onclick="count()">Count</button>
     </body>
 </html>

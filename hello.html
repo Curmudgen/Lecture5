@@ -8,10 +8,12 @@
 
                 document.querySelector('form').onsubmit = function() {
                     const name = document.querySelector('#name').value;
-                    alert(`Hello, ${name}!`);
+                    
+                    alert(`Hello, ${name}! The date is ${Date()}`);
+                    
                 };
             });
-
+            
         </script>
     </head>
     <body>
